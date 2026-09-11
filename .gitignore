@@ -1,0 +1,7 @@
+node_modules/
+
+slack-ai-agent/node_modules/
+
+.env
+
+slack-ai-agent/.env

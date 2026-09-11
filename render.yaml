@@ -14,7 +14,9 @@ services:
       - key: NODE_ENV
         value: production
       - key: DATABASE_URL
-        sync:false
+        fromDatabase:
+          name: slack-agent-db
+          property: connectionString
       - key: SLACK_BOT_TOKEN
         sync: false
       - key: SLACK_APP_TOKEN
